@@ -37,7 +37,7 @@ function App({ tasks, vacations, deleteTask, fetchLocalData, fetchVacations }) {
   useEffect(() => {
     fetchLocalData()
     fetchVacations()
-  }, [])
+  }, [fetchLocalData, fetchVacations])
 
   useEffect(() => {
     if(tasks.length){
